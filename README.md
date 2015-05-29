@@ -15,7 +15,7 @@ Prepare your environment:
     cd ${GOPATH}/src/github.com/MarcGrol/go-training  # start editing
     ${GOPATH}/bin/go-training                         # to run program
 
-**Step 2:Create a struct and unit-test it**
+**Step 2: Create a struct and unit-test it**
 
 The struct should carry your name, age and interests.
 Examples can be found on: 
@@ -35,7 +35,7 @@ Examples can be found on:
  - http-server: https://github.com/MarcGrol/goopenkitchen/blob/master/webserver/webserver.go
  - testing a http-server: TODO
 
-**Step 5:  Make client fire concurrent request to server**
+**Step 5: Make client fire concurrent request to server**
 
 Create 100 goroutines that talk to the server concurrently
 
