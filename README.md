@@ -13,7 +13,7 @@ Note that many examples are executable within your web-browser.
 
 **Step 1:  Create your environment**
 
-Download and instructions on https://golang.org/doc/install
+Download go and follow instructions on https://golang.org/doc/install
 
 Prepare your environment:
 
