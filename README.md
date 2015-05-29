@@ -9,7 +9,7 @@ This introduction training helps you to discover the go-language. To make it app
 
 **Step 1:  Create your environment**
 
-Download and instruction on https://golang.org/doc/install
+Download and instructions on https://golang.org/doc/install
 
 Prepare your environment:
 
