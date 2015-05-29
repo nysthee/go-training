@@ -1,18 +1,19 @@
 package main
 
 import (
-    // TODO: import standard libraries or 3rd party packages
-    "fmt"
+	// import standard libraries or 3rd party packages
+	"fmt"
 )
 
-// TODO: define your struct
+// define your struct
 type Dummy struct {
+	number int
 }
 
 func main() {
-    // TODO: create and populate the struct
-    d := Dummy{}
+	// create and populate the struct
+	d := Dummy{number: 42}
 
-    // TODO: print the struct and its attributes to stdout
-    fmt.Printf( "%+v", d )
+	// print the struct and its attributes to stdout
+	fmt.Printf("%+v\n", d)
 }
