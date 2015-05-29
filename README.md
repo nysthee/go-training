@@ -44,7 +44,11 @@ Examples can be found on:
 Fire 100 requests concurrently to the server. 
 TIP: Use go-routines
 Examples can be found on: 
- - go-routines: TODO
+ - go-routines: just call function with "go" before it
+
+
+    go doit()
+
 
 **Step 6: Make client fire concurrent request to server with deadline**
 
