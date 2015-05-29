@@ -41,11 +41,21 @@ Examples can be found on:
 
 **Step 5: Make client fire concurrent request to server**
 
-Create 100 goroutines that talk to the server concurrently
+Fire 100 requests concurrently to the server. 
+TIP: Use go-routines
+Examples can be found on: 
+ - go-routines: TODO
 
 **Step 6: Make client fire concurrent request to server with deadline**
 
-Create 100 goroutines that talk to the server concurrently and quit after 500 msec.
+Fire 100 requests concurrently to the server and quit after 500 msec.
+TIP: Use go-routines, channels and select-loop
+Examples can be found on: 
+ - go-routines: TODO
+ - channels: https://github.com/MarcGrol/goopenkitchen/blob/master/channels/channels.go
+ - select: https://github.com/MarcGrol/goopenkitchen/blob/master/select/select.go
+
+ 
 
 
 
