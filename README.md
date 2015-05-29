@@ -6,6 +6,10 @@ The following presentation (http://go-talks.appspot.com/github.com/MarcGrol/goop
 
 
 --
+**Step 0: Read through the [presentation](http://go-talks.appspot.com/github.com/MarcGrol/goopenkitchen/openKitchen.slide)**
+
+This will give you a good overview of the language. 
+Note that many examples are executable within your web-browser.
 
 **Step 1:  Create your environment**
 
@@ -24,7 +28,7 @@ Prepare your environment:
 Create a struct with the following attributes: your name, age and interests.
 
 - Print the values to stdout
-- Create a unit-test to proove that the values a correct.
+- Create a unit-test to proove that the values a correct. Use the "testing"-package.
 
 Examples can be found on: 
  - defining a struct: https://github.com/MarcGrol/goopenkitchen/blob/master/struct/struct.go
@@ -34,11 +38,11 @@ Examples can be found on:
 
 - Perform HTTP GET to http://httpbin.org/get (returns your request as a json-response)
 - Test it manually: A running server can be reached at: http://httpbin.org/get
-- Write a test to proove it works
+- Write a test to proove it works. Use the "net/http/httptest"-package.
 
 Examples can be found on: 
- - json-encoding:  https://github.com/MarcGrol/goopenkitchen/blob/master/encoding/encoding.go
  - http-client: https://github.com/MarcGrol/goopenkitchen/blob/master/httpClient/httpClient.go
+ - json-encoding:  https://github.com/MarcGrol/goopenkitchen/blob/master/encoding/encoding.go
  - testing a http-client: https://github.com/MarcGrol/goopenkitchen/blob/master/httpClient/httpClient_test.go
 
 **Step 4: Create a HTTP-server**
