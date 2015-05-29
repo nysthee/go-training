@@ -19,21 +19,30 @@ Prepare your environment:
     cd ${GOPATH}/src/github.com/MarcGrol/go-training  # start editing
     ${GOPATH}/bin/go-training                         # to run program
 
-**Step 2: Create a struct and unit-test it**
+**Step 2: Create a struct**
 
-The struct should carry your name, age and interests.
+Create a struct with the following attributes: your name, age and interests.
+
+- Print the values to stdout
+- Create a unit-test to proove that the values a correct.
+
 Examples can be found on: 
  - defining a struct: https://github.com/MarcGrol/goopenkitchen/blob/master/struct/struct.go
  - unit-testing: https://github.com/MarcGrol/goopenkitchen/blob/master/testit/reverse_test.go
 
-**Step 3: Create a http-client and write a test to proove it**
+**Step 3: Create a http-client**
 
-A running server can be reached at: TODO
+- Test it manually: A running server can be reached at: TODO
+- Write a test to proove it works
+
 Examples can be found on: 
  - http-client: TODO
  - testing a http-client: TODO
 
-**Step 4: Create a HTTP-server and write a test to proove it**
+**Step 4: Create a HTTP-server**
+
+- Test it manually from your browser or using curl
+- Write a test to proove it works
 
 Examples can be found on: 
  - http-server: https://github.com/MarcGrol/goopenkitchen/blob/master/webserver/webserver.go
