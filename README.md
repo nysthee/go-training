@@ -42,6 +42,7 @@ Examples can be found on:
 **Step 5: Make client fire concurrent request to server**
 
 Fire 100 requests concurrently to the server. 
+
 TIP: Use go-routines
 Example: go doit()
 
