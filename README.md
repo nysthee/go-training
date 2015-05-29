@@ -32,12 +32,14 @@ Examples can be found on:
 
 **Step 3: Create a http-client**
 
-- Test it manually: A running server can be reached at: TODO
+- Perform HTTP GET to http://httpbin.org/get (returns your request as a json-response)
+- Test it manually: A running server can be reached at: http://httpbin.org/get
 - Write a test to proove it works
 
 Examples can be found on: 
- - http-client: TODO
- - testing a http-client: TODO
+ - json-encoding:  https://github.com/MarcGrol/goopenkitchen/blob/master/encoding/encoding.go
+ - http-client: https://github.com/MarcGrol/goopenkitchen/blob/master/httpClient/httpClient.go
+ - testing a http-client: https://github.com/MarcGrol/goopenkitchen/blob/master/httpClient/httpClient_test.go
 
 **Step 4: Create a HTTP-server**
 
