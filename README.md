@@ -1,8 +1,8 @@
 # go-training
 
-This introduction training helps you to discover the go-language. To make it applicable we use HTTP-client and server in the exercises.
+This introduction training helps you to discover the go-language. To make it real-life applicable we use HTTP-client and server in the exercises.
 
-[This](http://go-talks.appspot.com/github.com/MarcGrol/goopenkitchen/openKitchen.slide) presentation can be used as training compagnon.  These full examples are also available at: https://github.com/MarcGrol/goopenkitchen
+The following presentation (http://go-talks.appspot.com/github.com/MarcGrol/goopenkitchen/openKitchen.slide) can be used as training compagnon.  The full examples are also available at: https://github.com/MarcGrol/goopenkitchen
 
 
 --
