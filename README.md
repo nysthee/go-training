@@ -4,6 +4,7 @@ Introduction in the go programming language.
 --
 
 *Step 1:  Create your environment*
+
 Download and instruction on https://golang.org/doc/install
 
 Prepare your environment:
