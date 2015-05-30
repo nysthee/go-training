@@ -9,7 +9,7 @@ All examples from the presentation are also available at: https://github.com/Mar
 
 --
 
-**Step 1:  [Create your environment](./tree/master/step_1)**
+**Step 1:  [Create your environment](https://github.com/MarcGrol/go-training/tree/master/step_1)**
 
 Download go and follow instructions on https://golang.org/doc/install
 
