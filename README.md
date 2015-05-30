@@ -27,14 +27,9 @@ Create and test a http-client
 
 --
 
-**Step 4: Create a HTTP-server**
+**Step 4: [Create a HTTP-server](https://github.com/MarcGrol/go-training/tree/master/step_4)**
 
-- Test it manually from your browser or using curl
-- Write a test to proove it works
-
-Examples can be found on: 
- - http-server: https://github.com/MarcGrol/goopenkitchen/blob/master/webserver/webserver.go
- - testing a http-server: TODO
+Create and test a http-server
 
 --
 
