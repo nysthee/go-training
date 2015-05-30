@@ -6,4 +6,4 @@
 
 **Examples can be found on:**
  - http-server: https://github.com/MarcGrol/goopenkitchen/blob/master/webserver/webserver.go
- - testing a http-server: TODO
+ - testing a http-server: https://github.com/MarcGrol/goopenkitchen/blob/master/httpServer/server_test.go
