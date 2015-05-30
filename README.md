@@ -11,33 +11,19 @@ All examples from the presentation are also available at: https://github.com/Mar
 
 **Step 1:  [Create your environment](https://github.com/MarcGrol/go-training/tree/master/step_1)**
 
-Download go and follow instructions on https://golang.org/doc/install
+Instructions to get your invironment up and running
 
 --
 
-**Step 2: Create a struct**
+**Step 2: [Create a struct](https://github.com/MarcGrol/go-training/tree/master/step_2)**
 
-Create a struct with the following attributes: your name, age and interests.
-
-- Print the values to stdout
-- Create a unit-test to proove that the values a correct. Use the "testing"-package.
-
-Examples can be found on: 
- - defining a struct: https://github.com/MarcGrol/goopenkitchen/blob/master/struct/struct.go
- - unit-testing: https://github.com/MarcGrol/goopenkitchen/blob/master/testit/reverse_test.go
+Create and unit-test a 'struct'. The go equivalent of a 'class'.
 
 --
 
-**Step 3: Create a http-client**
+**Step 3: [Create a http-client](https://github.com/MarcGrol/go-training/tree/master/step_3)**
 
-- Perform HTTP GET to http://httpbin.org/get (returns your request as a json-response)
-- Test it manually: A running server can be reached at: http://httpbin.org/get
-- Write a test to proove it works. Use the "net/http/httptest"-package.
-
-Examples can be found on: 
- - http-client: https://github.com/MarcGrol/goopenkitchen/blob/master/httpClient/httpClient.go
- - json-encoding:  https://github.com/MarcGrol/goopenkitchen/blob/master/encoding/encoding.go
- - testing a http-client: https://github.com/MarcGrol/goopenkitchen/blob/master/httpClient/httpClient_test.go
+Create and test a http-client
 
 --
 
