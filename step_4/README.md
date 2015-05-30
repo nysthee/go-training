@@ -1,6 +1,6 @@
 #Step 4: Create a HTTP-server
 
-- Return request a json back
+- As a server, echo the HTTP-request back as json response body
 - Test it manually from your browser or using curl
 - Write a test to proove it works
 
