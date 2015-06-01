@@ -5,6 +5,7 @@ Create a struct with the following attributes: your name, age and interests.
 - Create a unit-test to proove that the values a correct. Use the "testing"-package.
 
 **Examples can be found on:**
+ - presentation: http://go-talks.appspot.com/github.com/MarcGrol/goopenkitchen/openKitchen.slide#20
  - defining a struct: https://github.com/MarcGrol/goopenkitchen/blob/master/struct/struct.go
  - unit-testing: https://github.com/MarcGrol/goopenkitchen/blob/master/testit/reverse_test.go
 

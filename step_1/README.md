@@ -12,4 +12,4 @@ Download go and follow instructions on https://golang.org/doc/install
 ```
 
 **More info**
-- See [presentation](http://go-talks.appspot.com/github.com/MarcGrol/goopenkitchen/openKitchen.slide)
+- See [presentation](http://go-talks.appspot.com/github.com/MarcGrol/goopenkitchen/openKitchen.slide#6)

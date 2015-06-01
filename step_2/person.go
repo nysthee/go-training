@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-// define your struct
+// TODO: create a struct with your name, age and interests (where interests are moeled a string slice)
 type Dummy struct {
 	number int
 }
