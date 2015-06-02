@@ -33,7 +33,7 @@ Create and test a http-server
 
 --
 
-**Step 5: Make client fire concurrent request to server**
+**Step 5: [Make client fire 100 concurrent request to server](https://github.com/MarcGrol/go-training/tree/master/step_5)**
 
 Fire 100 requests concurrently to the server. 
 
@@ -42,7 +42,7 @@ Example: go doit()
 
 --
 
-**Step 6: Make client fire concurrent request to server with deadline**
+**Step 6: [Combine multiple different kind of events in a single loop](https://github.com/MarcGrol/go-training/tree/master/step_6)**
 
 Fire 100 requests concurrently to the server and quit after 500 msec.
 TIP: Use go-routines, channels and select-loop
