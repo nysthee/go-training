@@ -1,12 +1,13 @@
 # Step 2: Create a struct
 
 Create a struct with the following attributes: your name, age and interests.
-- Print the values to stdout
+- Print the values as json to stdout
 - Create a unit-test to proove that the values a correct. Use the "testing"-package.
 
 **Examples can be found on:**
  - presentation: http://go-talks.appspot.com/github.com/MarcGrol/goopenkitchen/openKitchen.slide#20
  - defining a struct: https://github.com/MarcGrol/goopenkitchen/blob/master/struct/struct.go
+ - json-encoding:  https://github.com/MarcGrol/goopenkitchen/blob/master/encoding/encoding.go
  - unit-testing: https://github.com/MarcGrol/goopenkitchen/blob/master/testit/reverse_test.go
 
 **Tips:**

@@ -3,9 +3,15 @@ package main
 import (
 	// import standard libraries or 3rd party packages
 	"fmt"
+	"log"
+	"os"
 )
 
-// TODO: create a struct with your name, age and interests (where interests are moeled a string slice)
+// TODO: rename this struct and add the following attributes:
+// - your name
+// age and
+// interests (asslice)
+//
 type Dummy struct {
 	number int
 }
@@ -14,6 +20,16 @@ func main() {
 	// create and populate the struct
 	d := Dummy{number: 42}
 
-	// print the struct and its attributes to stdout
-	fmt.Printf("%+v\n", d)
+	// log the struct and its attributes
+	log.Printf("%+v\n", d)
+
+	// print the json to stdout
+	fmt.Fprintf(os.Stdout, "%+v", toJson(d))
+	fmt.Fprintf(os.Stdout, "%s", string(toJson(d)))
+
+}
+
+func toJson(d Dummy) []byte {
+	// TODO convert to json
+	return nil
 }

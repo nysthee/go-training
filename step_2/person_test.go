@@ -12,3 +12,5 @@ func TestDummy(t *testing.T) {
 		t.Errorf("Expected '%+v', actual '%+v'", 21, d.number)
 	}
 }
+
+// TODO: add unit test to provve serialisation
