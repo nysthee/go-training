@@ -57,7 +57,7 @@ func (eh *echoHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	}
 
 	if eh.debug {
-		log.Printf("Server says: got %s on %s from %s:%s", r.Method, r.RequestURI, r.RemoteAddr, string(body))
+		log.Printf("Server says: %s on %s from %s:%s", r.Method, u.Path, r.RemoteAddr, string(body))
 	}
 
 	// Encode json

@@ -26,18 +26,20 @@ func main() {
 
 	numClientsWithinDeadline := runClients(*baseURL, *delay, *deadline, *concurrent)
 
-	fmt.Printf("%d of %d clients returned within deadline\n", numClientsWithinDeadline, concurrent)
+	fmt.Printf("%d of %d clients returned within deadline\n", numClientsWithinDeadline, *concurrent)
 }
 
 func runClients(baseURL string, delay int, deadline int, concurrent int) int {
 	numClientsWithinDeadline := 0
-	//
-	// TODO add your code here: fetch concurrently
-	//
 
+	//
 	// This is not concurrent but sequential
+	// TODO add your code here:
+	// fetch concurrently and return when deadline is exceeced.
+	// TIP: Use a select loop to receive both responses and keep track og time
+	//
 	for i := 0; i < concurrent; i++ {
-		_, err := getIt(fmt.Sprintf("%s?delay=%d&loop=%d", baseURL, delay, i))
+		_, err := getIt(fmt.Sprintf("%s/step6?delay=%d&loop=%d", baseURL, delay, i))
 		if err != nil {
 			log.Printf("Error fetching in loop %d:%s", i, err.Error())
 		}
