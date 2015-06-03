@@ -23,4 +23,5 @@ The prefab client can be tested and started the following way:
 
     # run the above mentioned client against it
     ./client
+```
 
