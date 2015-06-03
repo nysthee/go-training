@@ -48,12 +48,10 @@ Example: go doit()
 
 **Step 6: [Combine multiple different kind of events in a single event-loop](https://github.com/MarcGrol/go-training/tree/master/step_6)**
 
-Fire 100 requests concurrently to the server and quit after 500 msec.
+Fire 100 requests concurrently to the server and quit after 1000 msec.
 TIP: Use go-routines, channels and select-loop
 Examples can be found on: 
- - go-routines: TODO
- - channels: https://github.com/MarcGrol/goopenkitchen/blob/master/channels/channels.go
- - select: https://github.com/MarcGrol/goopenkitchen/blob/master/select/select.go
+ - concurrency: http://go-talks.appspot.com/github.com/MarcGrol/goopenkitchen/openKitchen.slide#31
 
  
 
