@@ -1,10 +1,10 @@
 #Step 6: Combine multiple different kind of events in a single loop
 
 - Create a program that fires 100 concurrent HTTP-GET-requests to the server. Pass a 'delay'-parameter within the url.
-- The server is provided. Upon receipt of a call, the server will sleep for 'delay' before returning a response. See below on how to start the server.
 - Report the duration from each goroutines back to the "main"-loop using a channel.
-- Stop waiting for responses after 1000 ms and terminate the main-loop
+- Stop waiting for responses after 1000 ms, report statistics and terminate.
 - Report average waiting time and percentage of total request that completed within the deadline.
+- The server is provided. Upon receipt of a call, the server will sleep for 'delay' before returning a response. See below on how to start the server.
 
 **Using the client**
 
