@@ -34,7 +34,7 @@ The prefab client can be tested and started the following way:
 
     # run the above mentioned client against it
     ./client
-
+```
 
 **Examples can be found on:**
 - goroutines: http://go-talks.appspot.com/github.com/MarcGrol/goopenkitchen/openKitchen.slide#31 etc
