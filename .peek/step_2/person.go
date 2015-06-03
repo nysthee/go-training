@@ -20,7 +20,7 @@ func main() {
 	// log the struct and its attributes
 	log.Printf("%+v\n", p)
 
-	// TODO print the json to stdout
+	// print the json to stdout
 	toJson(p, os.Stdout)
 
 }
