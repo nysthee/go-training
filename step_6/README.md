@@ -6,16 +6,36 @@
 - Stop waiting for responses after 1000 ms and terminate the main-loop
 - Report average waiting time and percentage of total request that completed within the deadline.
 
+**Using the client**
 
+A half-fabricate client is provided. Add concurrency and deadlining to it.
+The client can be tested and started the following way:
 ``` sh
-    # build the server
-    go build delayed_server.go
+    go test             # run unit tests
+    go build client.go  # build it
+    ./client -h         # show usage
+    ./client            # run it
+```
 
-    # start the server 
-    ./delayed_server
+
+**Starting the server**
+A complete server is provided. It can be found in the echopServer-directory of the project.
+The prefab client can be tested and started the following way:
+``` sh
+    cd ../echoServer
+    go test                           # run unit tests
+    
+    go build delayedEchoServer.go     # build the server
+
+    # start the server in background
+    ./delayedEchoServer &
 
     # verify the server: delay with approx: 1000 ms (with random noise)
-    time curl 'http://localhost:3000?delay=1000'
+    time curl -X 'http://localhost:3000?delay=1000&arg=hoi'
+    curl -X POST 'http://localhost:3000?delay=5000' --data hoi
+
+    # run the above mentioned client against it
+    ./client
 
 ```
 
