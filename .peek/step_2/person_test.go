@@ -21,13 +21,13 @@ func TestJson(t *testing.T) {
 	var buffer bytes.Buffer
 	err := toJson(p, &buffer)
 	if err != nil {
-		t.Errorf("Expected json encoding to succeed")
+		t.Errorf("Expected json encoding to succeed:%+v", err)
 	}
 
 	var again Person
 	err = fromJson(&buffer, &again)
 	if err != nil {
-		t.Errorf("Expected json decoding to succeed")
+		t.Errorf("Expected json decoding to succeed:%+v", err)
 	}
 
 	equal := reflect.DeepEqual(p, again)
