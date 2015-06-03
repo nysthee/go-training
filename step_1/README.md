@@ -16,14 +16,14 @@ Find more info in [presentation](http://go-talks.appspot.com/github.com/MarcGrol
 
 **Fetch the training project**
 ``` sh
-    go get github.com/MarcGrol/go-training            # to fetch and install
+    go get github.com/MarcGrol/go-training/...        # to fetch and install
     cd ${GOPATH}/src/github.com/MarcGrol/go-training  # start editing
     ${GOPATH}/bin/step_2                              # to run program (there are more)
 ```
 
 **Optional: Fetch the presentation project**
 ``` sh
-    go get github.com/MarcGrol/goopenkitchen            # to fetch and install
+    go get github.com/MarcGrol/goopenkitchen/...        # to fetch and install
     cd ${GOPATH}/src/github.com/MarcGrol/goopenkitchen  # start editing
     ${GOPATH}/bin/select                                # to run program (there are more)
 ```
