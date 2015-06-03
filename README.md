@@ -41,8 +41,8 @@ Create and test a http-server
 
 Fire 100 requests concurrently to your local server. 
 
-TIP: Use go-routines
-Example: go doit()
+Examples can be found on: 
+ - concurrency: http://go-talks.appspot.com/github.com/MarcGrol/goopenkitchen/openKitchen.slide#31
 
 --
 
@@ -50,8 +50,6 @@ Example: go doit()
 
 Fire 100 requests concurrently to the server and quit after 1000 msec.
 TIP: Use go-routines, channels and select-loop
-Examples can be found on: 
- - concurrency: http://go-talks.appspot.com/github.com/MarcGrol/goopenkitchen/openKitchen.slide#31
 
  
 
