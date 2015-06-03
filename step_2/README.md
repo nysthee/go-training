@@ -11,6 +11,12 @@ Create a struct with the following attributes: your name, age and interests.
  - unit-testing: https://github.com/MarcGrol/goopenkitchen/blob/master/testit/reverse_test.go
 
 **Tips:**
+
+- To run unit-tests, use:
+``` sh
+    go test
+````
+
 - To compile and build your application, use:
 ``` sh
     go run person.go     # no intermediate binary created
@@ -18,10 +24,7 @@ Create a struct with the following attributes: your name, age and interests.
     go install           # binary 'step_2' ends up in '${GOPATH}/bin'-directory
     ${GOPATH}/bin/step_2 # to start your application
 ```
-- To run unit-tests, use:
-``` sh
-    go test
-````
+
      
 
     
