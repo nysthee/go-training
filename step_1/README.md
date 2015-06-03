@@ -21,6 +21,14 @@ Find more info in [presentation](http://go-talks.appspot.com/github.com/MarcGrol
     ${GOPATH}/bin/step_2                              # to run program (there are more)
 ```
 
+**Verify installation**
+``` sh
+    cd ${GOPATH}/src/github.com/MarcGrol/go-training/step_1
+    go build hello.go                                        # build locally: ./hello
+    or
+    go install                                               # build to $GOPATH/bin/hello
+```
+
 **Optional: Fetch the presentation project**
 ``` sh
     go get github.com/MarcGrol/goopenkitchen/...        # to fetch and install
