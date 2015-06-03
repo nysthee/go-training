@@ -1,6 +1,10 @@
 #Echo-server needed for exercise 5 and 6
 
-A complete server is provided. It can be found in the echopServer-directory of the project.
+A complete server is provided. This server returns the HTTP-request back as a json document in the response.
+- Method
+- Url + parameters
+- Headers
+- Body (as string)
 
 **Starting the server**
 The prefab client can be tested and started the following way:
