@@ -37,9 +37,9 @@ Create and test a http-server
 
 --
 
-**Step 5: [Make client fire 100 concurrent request to server](https://github.com/MarcGrol/go-training/tree/master/step_5)**
+**Step 5: [Make client fire 100 concurrent requests to server](https://github.com/MarcGrol/go-training/tree/master/step_5)**
 
-Fire 100 requests concurrently to the server. 
+Fire 100 requests concurrently to your local server. 
 
 TIP: Use go-routines
 Example: go doit()
