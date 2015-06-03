@@ -10,7 +10,7 @@ All examples from the presentation are also available at: https://github.com/Mar
 
 --
 
-## Exercices
+## Exercises
 
 
 **Step 1:  [Create your environment](https://github.com/MarcGrol/go-training/tree/master/step_1)**
