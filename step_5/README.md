@@ -1,7 +1,7 @@
 #Step 5: Concurrently fire requests to a server
 
-- The server is provided. Upon receipt of a call, the server will sleep for 'delay' before returning a response. See below on how to start the server.
-- Create a program that fire 100 concurrent HTTP-GET-requests to the server
+- The server is provided. Upon receipt of a call, the server will the HTTP-request back as json-document. See below on how to start the server.
+- Create a program that fires 100 concurrent HTTP-GET-requests to the server
 - Report the result from each goroutines back to the "main"-loop using a channel.
 
 
