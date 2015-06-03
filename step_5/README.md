@@ -1,4 +1,4 @@
-#Step 5: Concurrently fire request to a server
+#Step 5: Concurrently fire requests to a server
 
 - The server is provided: So below on how to start the server
 - Create a program that fire 100 concurrent HTTP-GET-requests to the server
