@@ -78,6 +78,10 @@ func (eh *echoHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 }
 
+func init() {
+	rand.Seed(time.Now().UTC().UnixNano())
+}
+
 func main() {
 	mux := http.NewServeMux()
 
