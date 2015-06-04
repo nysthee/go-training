@@ -53,7 +53,7 @@ func runClients(baseURL string, delay int, deadline int, concurrent int) (int, i
 	// Start all go-routines and let them report on a buffered result channel
 	resultChannel := make(chan int, concurrent)
 	for i := 0; i < concurrent; i++ {
-		go getitWrapped(baseURL, delay, i, resultChannel)
+		go getitWrapped(baseURL, delay, deadline, i, resultChannel)
 	}
 
 	// create slice to collect results
@@ -96,11 +96,11 @@ SelectLoop:
 	return len(results), average
 }
 
-func getitWrapped(baseURL string, delay int, loop int, resultChannel chan int) {
+func getitWrapped(baseURL string, delay int, deadline int, loop int, resultChannel chan int) {
 	start := time.Now()
 
 	url := fmt.Sprintf("%s/step6?delay=%d&loop=%d", baseURL, delay, loop)
-	_, err := getIt(url, delay)
+	_, err := getIt(url, deadline)
 	if err != nil {
 		log.Printf("Client timout fetching with url %s", url)
 		//log.Printf("Timout fetching with url %s: %s", url, err.Error())
