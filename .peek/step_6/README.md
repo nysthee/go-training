@@ -1,6 +1,6 @@
 #Solutiuons for exercises
 
-** All make it in time**
+**All make it in time**
 ```
 mgrol@local:~/src/go/src/github.com/MarcGrol/go-training/.peek/step_6 (master)$ ./client  -concurrent=10 -delay=100
 2015/06/04 12:04:13 Using baseURL: http://localhost:3000, delay: 100, deadline: 1000, concurrent: 10
@@ -29,7 +29,7 @@ mgrol@local:~/src/go/src/github.com/MarcGrol/go-training/.peek/step_6 (master)$ 
 average response-time: 64
 ```
 
-** Half makes it in time**
+**Half makes it in time**
 
 ```
 mgrol@local:~/src/go/src/github.com/MarcGrol/go-training/.peek/step_6 (master)$ ./client  -concurrent=10 -delay=1000
