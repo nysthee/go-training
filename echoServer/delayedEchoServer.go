@@ -33,7 +33,7 @@ func (eh *echoHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	effectiveSleep := 0
 
 	// configurable sleep
-	sleepIfNeeded(r.RequestURI)
+	effectiveSleep = sleepIfNeeded(r.RequestURI)
 
 	var body string
 	if r.Body != nil {
@@ -83,8 +83,8 @@ func sleepIfNeeded(requestUri string) int {
 	if delayString != "" {
 		delay, err := strconv.Atoi(delayString)
 		if err == nil {
-			actualSleep := rand.Intn(delay * 2)
-			time.Sleep(time.Duration(actualSleep) * time.Millisecond)
+			actualSleep := time.Duration(rand.Intn(delay*2)) * time.Millisecond
+			time.Sleep(actualSleep)
 		}
 	}
 	return actualSleep
@@ -95,7 +95,7 @@ func init() {
 }
 
 func main() {
-	verbose := flag.Bool("verbose", true, "Verbose mode") // HL
+	verbose := flag.Bool("verbose", false, "Verbose mode") // HL
 	flag.Parse()
 
 	mux := http.NewServeMux()
