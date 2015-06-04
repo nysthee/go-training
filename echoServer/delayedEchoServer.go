@@ -3,6 +3,7 @@ package main
 import (
 	"bytes"
 	"encoding/json"
+	"flag"
 	"fmt"
 	"io/ioutil"
 	"log"
@@ -29,16 +30,10 @@ type echoHandler struct {
 func (eh *echoHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	u, _ := url.Parse(r.RequestURI)
 	params, _ := url.ParseQuery(u.RawQuery)
+	effectiveSleep := 0
 
 	// configurable sleep
-	delayString := params.Get("delay")
-	if delayString != "" {
-		delay, err := strconv.Atoi(delayString)
-		if err == nil {
-			number := rand.Intn(delay * 2)
-			time.Sleep(time.Duration(number) * time.Millisecond)
-		}
-	}
+	sleepIfNeeded(r.RequestURI)
 
 	var body string
 	if r.Body != nil {
@@ -57,7 +52,8 @@ func (eh *echoHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	}
 
 	if eh.debug {
-		log.Printf("Server says: %s on %s from %s:%s", r.Method, u.Path, r.RemoteAddr, string(body))
+		log.Printf("Server says: %s on %s from %s: slept %d",
+			r.Method, r.RequestURI, r.RemoteAddr, effectiveSleep)
 	}
 
 	// Encode json
@@ -78,14 +74,33 @@ func (eh *echoHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 }
 
+func sleepIfNeeded(requestUri string) int {
+	actualSleep := 0
+
+	u, _ := url.Parse(requestUri)
+	params, _ := url.ParseQuery(u.RawQuery)
+	delayString := params.Get("delay")
+	if delayString != "" {
+		delay, err := strconv.Atoi(delayString)
+		if err == nil {
+			actualSleep := rand.Intn(delay * 2)
+			time.Sleep(time.Duration(actualSleep) * time.Millisecond)
+		}
+	}
+	return actualSleep
+}
+
 func init() {
 	rand.Seed(time.Now().UTC().UnixNano())
 }
 
 func main() {
+	verbose := flag.Bool("verbose", true, "Verbose mode") // HL
+	flag.Parse()
+
 	mux := http.NewServeMux()
 
-	h := &echoHandler{debug: true}
+	h := &echoHandler{debug: *verbose}
 	mux.Handle("/", h)
 
 	fmt.Printf("Start listening at http://localhost:3000/\n")
