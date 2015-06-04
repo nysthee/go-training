@@ -1,5 +1,11 @@
 #Step 6: Combine multiple different kind of events in a single loop
 
+**Why this exercise?**
+
+In many real world situation it is better to give a fast answer on time than an complete answer to late. For example autocomplete and search.
+
+**What to develop**
+
 - Create a program that fires 100 concurrent HTTP-GET-requests to the server. Pass a 'delay'-parameter within the url.
 - The server is provided. Upon receipt of a call, the server will sleep for 'delay' before returning a response. See below on how to start the server.
 - Report the duration from each goroutines back to the "main"-loop using a channel.
