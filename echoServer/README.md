@@ -10,7 +10,7 @@ A complete server is provided. This server returns the HTTP-request back as a js
 The prefab client can be tested and started the following way:
 ``` sh
     cd ../echoServer
-    go test                           # run unit tests
+    go test -tags=integration         # run integration tests
     
     go build delayedEchoServer.go     # build the server
 
