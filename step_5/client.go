@@ -18,8 +18,10 @@ type Response struct {
 }
 
 func main() {
-	baseURL := flag.String("baseURL", "http://localhost:3000", "Remote base url") // HL
-	concurrent := flag.Int("concurrent", 10, "Num concurrent clients to be started")
+	var (
+		baseURL    = flag.String("baseURL", "http://localhost:3000", "Remote base url") // HL
+		concurrent = flag.Int("concurrent", 10, "Num concurrent clients to be started")
+	)
 	flag.Parse()
 
 	numClientsWithinDeadline := runClients(*baseURL, *concurrent)

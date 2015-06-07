@@ -18,26 +18,18 @@ type Response struct {
 	Body    string              `json:"body"`
 }
 
-var (
-	baseURL    *string
-	delay      *int
-	deadline   *int
-	concurrent *int
-)
+func main() {
 
-func parseArgs() {
-	baseURL = flag.String("baseURL", "http://localhost:3000", "Remote base url") // HL
-	delay = flag.Int("delay", 1000, "Server delay in msec")
-	deadline = flag.Int("deadline", 1000, "Deadline in msec")
-	concurrent = flag.Int("concurrent", 10, "Num concurrent clients to be started")
+	var (
+		baseURL    = flag.String("baseURL", "http://localhost:3000", "Remote base url") // HL
+		delay      = flag.Int("delay", 1000, "Server delay in msec")
+		deadline   = flag.Int("deadline", 1000, "Deadline in msec")
+		concurrent = flag.Int("concurrent", 10, "Num concurrent clients to be started")
+	)
 	flag.Parse()
 
 	log.Printf("Using baseURL: %s, delay: %d, deadline: %d, concurrent: %d",
 		*baseURL, *delay, *deadline, *concurrent)
-}
-
-func main() {
-	parseArgs()
 
 	// run in parallel with deadline
 	numClientsWithinDeadline, averageResponseTime :=
